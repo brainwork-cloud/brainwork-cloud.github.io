@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nopal Brainwork | Bangun Sosial Media dengan Iklan dan AI</title>
+<meta name="description" content="Link resmi @nopal.brainwork: pack prompt AI untuk UMKM, kursus Strategi Kilat Sosmed, kelas offline NolKaryawan, dan kontak kerja sama atau endorsement.">
+<link rel="canonical" href="https://brainwork-cloud.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Nopal Brainwork">
+<meta property="og:title" content="Nopal Brainwork | Bangun Sosial Media dengan Iklan dan AI">
+<meta property="og:description" content="Pack prompt AI untuk UMKM, kursus Strategi Kilat Sosmed, kelas offline NolKaryawan, dan kontak kerja sama.">
+<meta property="og:url" content="https://brainwork-cloud.github.io/">
+<meta property="og:image" content="https://brainwork-cloud.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0A0A0F">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+<style>
+  :root {
+    --hitam: #0A0A0F;
+    --panel: #15121F;
+    --garis: #2C2642;
+    --ungu: #7B2FBE;
+    --ungu-terang: #9A55DB;
+    --emas: #F5C107;
+    --putih: #F6F3FB;
+    --redup: #B9AFCC;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; background: var(--hitam); }
+  body {
+    margin: 0;
+    background: var(--hitam);
+    color: var(--putih);
+    font: 400 16px/1.6 "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 30rem; margin: 0 auto; padding: 28px 20px calc(40px + env(safe-area-inset-bottom)); }
+
+  /* Identitas */
+  .id { display: flex; align-items: center; gap: 14px; }
+  .avatar {
+    width: 60px; height: 60px; flex: none; border-radius: 50%;
+    border: 2px solid var(--emas); object-fit: cover; background: var(--ungu);
+    display: grid; place-items: center;
+    font: 700 20px/1 "Poppins", sans-serif; color: var(--emas); letter-spacing: -0.02em;
+  }
+  .nama { margin: 0; font-weight: 700; font-size: 17px; line-height: 1.25; }
+  .handle { color: var(--redup); font-size: 14px; text-decoration: none; }
+  .handle:hover { color: var(--putih); }
+  h1 {
+    margin: 22px 0 10px;
+    font-weight: 800; font-size: clamp(28px, 8vw, 36px); line-height: 1.12; letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+  .bukti { margin: 0; color: var(--redup); font-size: 15px; }
+
+  section { margin-top: 40px; }
+  h2 { margin: 0 0 4px; font-size: 19px; font-weight: 700; line-height: 1.3; letter-spacing: -0.01em; text-wrap: balance; }
+  .sub { margin: 0; color: var(--redup); font-size: 14px; }
+  h3 { margin: 0 0 4px; font-size: 17px; font-weight: 600; line-height: 1.3; }
+
+  /* Tangga produk: urutan sungguhan, dari yang paling ringan */
+  .tangga { list-style: none; margin: 20px 0 0; padding: 0 0 0 46px; position: relative; }
+  .tangga::before {
+    content: ""; position: absolute; left: 15px; top: 16px; bottom: 16px; width: 2px;
+    background: linear-gradient(to bottom, var(--emas), var(--ungu));
+    transform-origin: top; animation: naik 1s cubic-bezier(.2,.7,.2,1) .15s both;
+  }
+  @keyframes naik { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+  .anak { position: relative; padding-bottom: 28px; }
+  .anak:last-child { padding-bottom: 0; }
+  .lvl {
+    position: absolute; left: -46px; top: 0; width: 32px; height: 32px; border-radius: 50%;
+    display: grid; place-items: center; font-weight: 700; font-size: 14px;
+    background: var(--hitam); border: 2px solid var(--ungu-terang); color: var(--putih);
+  }
+  .anak:first-child .lvl { background: var(--emas); border-color: var(--emas); color: var(--hitam); }
+  .anak p { margin: 0; color: var(--redup); font-size: 15px; }
+  .beli { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 12px; }
+  .harga { display: flex; flex-direction: column; line-height: 1.2; }
+  .harga b { color: var(--emas); font-size: 20px; font-weight: 700; }
+  .harga s { color: var(--redup); font-size: 13px; }
+  .harga small { color: var(--redup); font-size: 12px; margin-top: 3px; }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 20px;
+    border-radius: 12px; text-decoration: none; font: 600 15px/1.2 "Poppins", sans-serif; text-align: center;
+  }
+  .btn-ungu { background: var(--ungu); color: #fff; }
+  .btn-ungu:hover { background: var(--ungu-terang); }
+  .btn-emas { background: var(--emas); color: var(--hitam); }
+  .btn-emas:hover { background: #FFD43B; }
+  .btn-garis { border: 1.5px solid var(--garis); color: var(--putih); }
+  .btn-garis:hover { border-color: var(--ungu-terang); }
+
+  /* Proyek baru */
+  .proyek { margin-top: 16px; padding: 18px; border-radius: 16px; background: var(--panel); border: 1px solid var(--garis); }
+  .proyek p { margin: 0; color: var(--redup); font-size: 15px; }
+  .aksi { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+  .alat {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-top: 12px;
+    padding: 14px 18px; border-radius: 16px; border: 1px solid var(--garis); text-decoration: none;
+  }
+  .alat:hover { border-color: var(--ungu-terang); }
+  .alat span { font-weight: 600; font-size: 15px; line-height: 1.35; }
+  .alat small { flex: none; color: var(--redup); font-size: 12px; }
+
+  /* Kontak kerja sama */
+  .kontak { margin-top: 12px; }
+  .kontak a {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    padding: 16px 0; border-top: 1px solid var(--garis); text-decoration: none;
+  }
+  .kontak a:last-child { border-bottom: 1px solid var(--garis); }
+  .kontak b { display: block; font-weight: 600; font-size: 16px; line-height: 1.3; }
+  .kontak small { color: var(--redup); font-size: 13px; }
+  .kontak svg { flex: none; width: 22px; height: 22px; color: var(--emas); }
+  .kolab { margin: 14px 0 0; color: var(--redup); font-size: 14px; }
+  .kolab strong { color: var(--putih); font-weight: 500; }
+
+  /* Media sosial */
+  .sosmed { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .sosmed a {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border-radius: 999px;
+    border: 1px solid var(--garis); text-decoration: none; font-size: 14px; font-weight: 500;
+  }
+  .sosmed a:hover { border-color: var(--ungu-terang); }
+
+  footer { margin-top: 44px; color: var(--redup); font-size: 12px; }
+  footer p { margin: 2px 0; }
+
+  a:focus-visible { outline: 3px solid var(--emas); outline-offset: 3px; border-radius: 8px; }
+  @media (prefers-reduced-motion: reduce) { .tangga::before { animation: none; } }
+  @media (min-width: 720px) { .wrap { padding-top: 64px; } }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nopal",
+  "alternateName": "Nopal Brainwork",
+  "jobTitle": "Spesialis Bangun Sosial Media",
+  "url": "https://brainwork-cloud.github.io/",
+  "sameAs": [
+    "https://www.instagram.com/nopal.brainwork/",
+    "https://www.tiktok.com/@nopal.brainwork",
+    "https://www.youtube.com/@nopal.brainwork",
+    "https://www.threads.com/@nopal.brainwork",
+    "https://www.facebook.com/449370488262813"
+  ]
+}
+</script>
+</head>
+<body>
+<main class="wrap">
+  <header class="id">
+    <div class="avatar" role="img" aria-label="Nopal Brainwork">NB</div>
+    <div>
+      <p class="nama">Nopal Brainwork</p>
+      <a class="handle" href="https://www.instagram.com/nopal.brainwork/" data-label="handle-instagram">@nopal.brainwork</a>
+    </div>
+  </header>
+
+  <h1>Aku bantu bisnis bersaing di media sosial, pakai iklan dan AI.</h1>
+  <p class="bukti">8 tahun di digital marketing, spesialis Meta Ads, Google Ads, dan AI agentic. 210 rb orang mengikuti kontenku di Instagram.</p>
+
+  <section aria-labelledby="judul-tangga">
+    <h2 id="judul-tangga">Belajar dari aku, mulai dari yang paling ringan</h2>
+    <p class="sub">Tiga tingkat. Pilih yang sesuai kebutuhanmu sekarang.</p>
+    <ol class="tangga">
+      <li class="anak">
+        <span class="lvl" aria-hidden="true">1</span>
+        <h3>Pack 50 Prompt AI + Template UMKM</h3>
+        <p>Prompt siap pakai untuk bikin konten, balas pelanggan, dan urusan admin. Tinggal salin, isi data usahamu.</p>
+        <div class="beli">
+          <span class="harga"><s>Rp 99 rb</s><b>Rp 28 rb</b><small>Harga perkenalan</small></span>
+          <a class="btn btn-emas" href="https://0karyawan.netlify.app/" data-utm="pack-prompt" data-label="pack-prompt">Ambil pack</a>
+        </div>
+      </li>
+      <li class="anak">
+        <span class="lvl" aria-hidden="true">2</span>
+        <h3>Strategi Kilat Sosmed</h3>
+        <p>Enam langkah membangun akun sosmed dari 0 sampai 100 rb followers. Tinggal contek strategi yang aku pakai.</p>
+        <div class="beli">
+          <span class="harga"><b>Rp 148 rb</b><small>Naik ke Rp 199 rb di 250 rb followers</small></span>
+          <a class="btn btn-ungu" href="https://nopalbrainwork.netlify.app/" data-utm="strategi-kilat" data-label="strategi-kilat">Lihat isi kursus</a>
+        </div>
+      </li>
+      <li class="anak">
+        <span class="lvl" aria-hidden="true">3</span>
+        <h3>Kelas offline NolKaryawan</h3>
+        <p>Sehari praktik langsung di Tangerang. Pulang membawa tim AI untuk konten, marketing, customer service, dan keuangan bisnismu. Hanya 5 kursi per kelas.</p>
+        <div class="beli">
+          <span class="harga"><b>Rp 2,5 jt</b><small>Naik tiap kursi terisi</small></span>
+          <a class="btn btn-ungu" href="https://nolkaryawan.netlify.app/" data-utm="kelas-nolkaryawan" data-label="kelas-nolkaryawan">Amankan kursi</a>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="judul-baru">
+    <h2 id="judul-baru">Lagi aku bangun</h2>
+    <div class="proyek">
+      <h3>Mesin konten AI</h3>
+      <p>Skalarium adalah channel video edukasi yang riset, naskah, suara, animasi, sampai postingnya dikerjakan agen AI. Aku cukup menyetujui tiap video. Mau punya mesin seperti ini? Masuk daftar tunggunya.</p>
+      <div class="aksi">
+        <a class="btn btn-emas" href="https://ig.me/m/nopal.brainwork" data-label="dm-mesin">Kirim DM &ldquo;MESIN&rdquo;</a>
+        <a class="btn btn-garis" href="https://brainwork-cloud.github.io/skalarium/" data-label="skalarium">Lihat Skalarium</a>
+      </div>
+    </div>
+    <a class="alat" href="https://cs.pake.ai/a/brainwork/instagram-comment-to-dm" data-label="pakeai">
+      <span>AI balas komen &amp; DM Instagram otomatis</span>
+      <small>Tools partner</small>
+    </a>
+  </section>
+
+  <section aria-labelledby="judul-kerjasama">
+    <h2 id="judul-kerjasama">Kerja sama &amp; endorsement</h2>
+    <p class="sub">Langsung ke admin lewat WhatsApp. Pesan pembuka sudah disiapkan.</p>
+    <div class="kontak">
+      <a href="https://wa.me/6285175123014?text=Halo%20Kak%20Jaya%2C%20saya%20tertarik%20kerja%20sama%20endorsement%20dengan%20%40nopal.brainwork.%0A%0ANama%20brand%3A%0AProduk%3A%0ATimeline%3A" data-label="wa-jaya">
+        <span><b>Endorsement &amp; paid promote</b><small>Chat Admin Jaya</small></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
+      </a>
+      <a href="https://wa.me/6285158666066?text=Halo%20Kak%20Nazwa%2C%20saya%20tertarik%20kerja%20sama%20dengan%20Brainwork.%0A%0ANama%20brand%2Finstansi%3A%0AJenis%20kerja%20sama%3A%0ATimeline%3A" data-label="wa-nazwa">
+        <span><b>Kerja sama, event &amp; partnership</b><small>Chat Admin Nazwa</small></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
+      </a>
+    </div>
+    <p class="kolab">Pernah kolaborasi dengan <strong>Chandra Asri, Bluebird, Aoklandz, ZenitLand, Purwadhika, Kemenag, FYP Management, Kelas.work, dan Slice</strong>.</p>
+  </section>
+
+  <section aria-labelledby="judul-ikuti">
+    <h2 id="judul-ikuti">Ikuti kontenku</h2>
+    <nav class="sosmed" aria-label="Media sosial Nopal Brainwork">
+      <a href="https://www.instagram.com/nopal.brainwork/" data-label="instagram">Instagram</a>
+      <a href="https://www.tiktok.com/@nopal.brainwork" data-label="tiktok">TikTok</a>
+      <a href="https://www.youtube.com/@nopal.brainwork" data-label="youtube">YouTube</a>
+      <a href="https://www.threads.com/@nopal.brainwork" data-label="threads">Threads</a>
+      <a href="https://www.facebook.com/449370488262813" data-label="facebook">Facebook</a>
+    </nav>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brainwork</p>
+    <p id="privasi">Halaman ini tidak memasang pelacak.</p>
+  </footer>
+</main>
+<script>
+  // Isi ID di sini kalau mau mengukur klik (kosong = tanpa pelacak):
+  // ga4 = Measurement ID Google Analytics 4 (mis. G-ABC123XYZ), metaPixel = ID Meta Pixel (angka).
+  var ANALITIK = { ga4: "", metaPixel: "" };
+
+  (function () {
+    var q = new URLSearchParams(location.search);
+    // Satu halaman untuk semua platform: pakai link ...github.io/?src=tiktok di bio TikTok, ?src=threads di Threads, dst.
+    var src = (q.get("src") || q.get("utm_source") || "instagram").toLowerCase().replace(/[^a-z0-9_-]/g, "").slice(0, 30) || "instagram";
+
+    document.querySelectorAll("a[data-utm]").forEach(function (a) {
+      try {
+        var u = new URL(a.href);
+        u.searchParams.set("utm_source", src);
+        u.searchParams.set("utm_medium", "bio");
+        u.searchParams.set("utm_campaign", a.getAttribute("data-utm"));
+        a.href = u.toString();
+      } catch (e) {}
+    });
+
+    var dipakai = [];
+    if (/^G-[A-Z0-9]{4,}$/.test(ANALITIK.ga4)) {
+      var s = document.createElement("script");
+      s.async = true;
+      s.src = "https://www.googletagmanager.com/gtag/js?id=" + ANALITIK.ga4;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag("js", new Date());
+      window.gtag("config", ANALITIK.ga4, { traffic_src: src });
+      dipakai.push("Google Analytics");
+    }
+    if (/^\d{8,20}$/.test(ANALITIK.metaPixel)) {
+      !function (f, b, e, v, n, t, x) { if (f.fbq) return; n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); }; if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = []; t = b.createElement(e); t.async = !0; t.src = v; x = b.getElementsByTagName(e)[0]; x.parentNode.insertBefore(t, x); }(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+      window.fbq("init", ANALITIK.metaPixel);
+      window.fbq("track", "PageView");
+      dipakai.push("Meta Pixel");
+    }
+    if (dipakai.length) {
+      document.getElementById("privasi").textContent = "Halaman ini memakai " + dipakai.join(" dan ") + " untuk mengukur klik.";
+    }
+
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest ? e.target.closest("a[data-label]") : null;
+      if (!a) return;
+      var label = a.getAttribute("data-label");
+      if (window.gtag) window.gtag("event", "klik_link", { link_label: label, traffic_src: src });
+      if (window.fbq) window.fbq("trackCustom", "KlikLink", { label: label, sumber: src });
+    });
+  })();
+</script>
+</body>
+</html>
