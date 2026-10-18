@@ -17,7 +17,8 @@
 <meta property="og:locale" content="id_ID">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0A0A0F">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
@@ -51,6 +52,8 @@
     display: grid; place-items: center;
     font: 700 20px/1 "Poppins", sans-serif; color: var(--emas); letter-spacing: -0.02em;
   }
+  .siapa { flex: 1; min-width: 0; }
+  .logo { flex: none; height: 30px; width: auto; }
   .nama { margin: 0; font-weight: 700; font-size: 17px; line-height: 1.25; }
   .handle { color: var(--redup); font-size: 14px; text-decoration: none; }
   .handle:hover { color: var(--putih); }
@@ -122,8 +125,8 @@
   .kontak b { display: block; font-weight: 600; font-size: 16px; line-height: 1.3; }
   .kontak small { color: var(--redup); font-size: 13px; }
   .kontak svg { flex: none; width: 22px; height: 22px; color: var(--emas); }
-  .kolab { margin: 14px 0 0; color: var(--redup); font-size: 14px; }
-  .kolab strong { color: var(--putih); font-weight: 500; }
+  .kolab { margin: 16px 0 0; color: var(--putih); font-size: 14px; font-weight: 500; line-height: 1.55; }
+  .kolab span { display: block; color: var(--redup); font-size: 13px; font-weight: 400; margin-bottom: 2px; }
 
   /* Media sosial */
   .sosmed { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
@@ -148,6 +151,7 @@
   "alternateName": "Nopal Brainwork",
   "jobTitle": "Spesialis Bangun Sosial Media",
   "url": "https://brainwork-cloud.github.io/",
+  "image": "https://brainwork-cloud.github.io/foto.jpg",
   "sameAs": [
     "https://www.instagram.com/nopal.brainwork/",
     "https://www.tiktok.com/@nopal.brainwork",
@@ -161,15 +165,32 @@
 <body>
 <main class="wrap">
   <header class="id">
-    <div class="avatar" role="img" aria-label="Nopal Brainwork">NB</div>
-    <div>
+    <img class="avatar" src="foto.jpg" alt="Foto Nopal" width="60" height="60">
+    <div class="siapa">
       <p class="nama">Nopal Brainwork</p>
       <a class="handle" href="https://www.instagram.com/nopal.brainwork/" data-label="handle-instagram">@nopal.brainwork</a>
     </div>
+    <img class="logo" src="logo-brainwork.png" alt="Brainwork" width="96" height="30">
   </header>
 
   <h1>Aku bantu bisnis bersaing di media sosial, pakai iklan dan AI.</h1>
   <p class="bukti">8 tahun di digital marketing, spesialis Meta Ads, Google Ads, dan AI agentic. 210 rb orang mengikuti kontenku di Instagram.</p>
+
+  <section aria-labelledby="judul-kerjasama">
+    <h2 id="judul-kerjasama">Kerja sama &amp; endorsement</h2>
+    <p class="sub">Endorsement, paid promote, event, atau partnership. Chat salah satu admin, pesan pembukanya sudah disiapkan.</p>
+    <div class="kontak">
+      <a href="https://wa.me/6285158666066?text=Halo%20Kak%20Nazwa%2C%20saya%20tertarik%20kerja%20sama%2Fendorsement%20dengan%20%40nopal.brainwork.%0A%0ANama%20brand%3A%0AJenis%20kerja%20sama%3A%0ATimeline%3A" data-label="wa-nazwa">
+        <span><b>Admin Nazwa</b><small>WhatsApp</small></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
+      </a>
+      <a href="https://wa.me/6285175123014?text=Halo%20Kak%20Jaya%2C%20saya%20tertarik%20kerja%20sama%2Fendorsement%20dengan%20%40nopal.brainwork.%0A%0ANama%20brand%3A%0AJenis%20kerja%20sama%3A%0ATimeline%3A" data-label="wa-jaya">
+        <span><b>Admin Jaya</b><small>WhatsApp</small></span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
+      </a>
+    </div>
+    <p class="kolab"><span>Partner kolaborasi</span>Chandra Asri, Bluebird, Aoklandz, ZenitLand, Purwadhika, Kemenag, FYP Management, Kelas.work, Slice</p>
+  </section>
 
   <section aria-labelledby="judul-tangga">
     <h2 id="judul-tangga">Belajar dari aku, mulai dari yang paling ringan</h2>
@@ -219,22 +240,6 @@
       <span>AI balas komen &amp; DM Instagram otomatis</span>
       <small>Tools partner</small>
     </a>
-  </section>
-
-  <section aria-labelledby="judul-kerjasama">
-    <h2 id="judul-kerjasama">Kerja sama &amp; endorsement</h2>
-    <p class="sub">Langsung ke admin lewat WhatsApp. Pesan pembuka sudah disiapkan.</p>
-    <div class="kontak">
-      <a href="https://wa.me/6285175123014?text=Halo%20Kak%20Jaya%2C%20saya%20tertarik%20kerja%20sama%20endorsement%20dengan%20%40nopal.brainwork.%0A%0ANama%20brand%3A%0AProduk%3A%0ATimeline%3A" data-label="wa-jaya">
-        <span><b>Endorsement &amp; paid promote</b><small>Chat Admin Jaya</small></span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
-      </a>
-      <a href="https://wa.me/6285158666066?text=Halo%20Kak%20Nazwa%2C%20saya%20tertarik%20kerja%20sama%20dengan%20Brainwork.%0A%0ANama%20brand%2Finstansi%3A%0AJenis%20kerja%20sama%3A%0ATimeline%3A" data-label="wa-nazwa">
-        <span><b>Kerja sama, event &amp; partnership</b><small>Chat Admin Nazwa</small></span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4V5z"/><path d="M8 10h8M8 13h5"/></svg>
-      </a>
-    </div>
-    <p class="kolab">Pernah kolaborasi dengan <strong>Chandra Asri, Bluebird, Aoklandz, ZenitLand, Purwadhika, Kemenag, FYP Management, Kelas.work, dan Slice</strong>.</p>
   </section>
 
   <section aria-labelledby="judul-ikuti">
